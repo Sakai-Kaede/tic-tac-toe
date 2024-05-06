@@ -14,6 +14,7 @@ function Square({ value, onSquareClick }: SquareProps) {
   );
 }
 
+// 親コンポーネントで子コンポーネントの状態を一括管理する
 function Board() {
   const [squares, setSquares] = useState<Array<string | null>>(Array(9).fill(null));
 
